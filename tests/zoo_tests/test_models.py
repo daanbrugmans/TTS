@@ -6,10 +6,10 @@ import shutil
 import torch
 
 from tests import get_tests_data_path, get_tests_output_path, run_cli
-from TTS.tts.utils.languages import LanguageManager
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.utils.generic_utils import get_user_data_dir
-from TTS.utils.manage import ModelManager
+from TTS.TTS.tts.utils.languages import LanguageManager
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.utils.generic_utils import get_user_data_dir
+from TTS.TTS.utils.manage import ModelManager
 
 MODELS_WITH_SEP_TESTS = [
     "tts_models/multilingual/multi-dataset/bark",
@@ -97,8 +97,8 @@ def test_xtts():
 
 def test_xtts_streaming():
     """Testing the new inference_stream method"""
-    from TTS.tts.configs.xtts_config import XttsConfig
-    from TTS.tts.models.xtts import Xtts
+    from TTS.TTS.tts.configs.xtts_config import XttsConfig
+    from TTS.TTS.tts.models.xtts import Xtts
 
     speaker_wav = [os.path.join(get_tests_data_path(), "ljspeech", "wavs", "LJ001-0001.wav")]
     speaker_wav_2 = os.path.join(get_tests_data_path(), "ljspeech", "wavs", "LJ001-0002.wav")
@@ -152,8 +152,8 @@ def test_xtts_v2():
 
 def test_xtts_v2_streaming():
     """Testing the new inference_stream method"""
-    from TTS.tts.configs.xtts_config import XttsConfig
-    from TTS.tts.models.xtts import Xtts
+    from TTS.TTS.tts.configs.xtts_config import XttsConfig
+    from TTS.TTS.tts.models.xtts import Xtts
 
     speaker_wav = [os.path.join(get_tests_data_path(), "ljspeech", "wavs", "LJ001-0001.wav")]
     model_path = os.path.join(get_user_data_dir("tts"), "tts_models--multilingual--multi-dataset--xtts_v2")

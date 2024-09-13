@@ -6,10 +6,10 @@ from typing import Union
 import numpy as np
 from torch import nn
 
-from TTS.utils.audio.numpy_transforms import save_wav
-from TTS.utils.manage import ModelManager
-from TTS.utils.synthesizer import Synthesizer
-from TTS.config import load_config
+from TTS.TTS.utils.audio.numpy_transforms import save_wav
+from TTS.TTS.utils.manage import ModelManager
+from TTS.TTS.utils.synthesizer import Synthesizer
+from TTS.TTS.config import load_config
 
 
 class TTS(nn.Module):
@@ -28,7 +28,7 @@ class TTS(nn.Module):
         """🐸TTS python interface that allows to load and use the released models.
 
         Example with a multi-speaker model:
-            >>> from TTS.api import TTS
+            >>> from TTS.TTS.api import TTS
             >>> tts = TTS(TTS.list_models()[0])
             >>> wav = tts.tts("This is a test! This is also a test!!", speaker=tts.speakers[0], language=tts.languages[0])
             >>> tts.tts_to_file(text="Hello world!", speaker=tts.speakers[0], language=tts.languages[0], file_path="output.wav")

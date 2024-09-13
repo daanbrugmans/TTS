@@ -5,8 +5,8 @@ from typing import Dict, List
 
 from packaging.version import Version
 
-from TTS.tts.utils.text.phonemizers.base import BasePhonemizer
-from TTS.tts.utils.text.punctuation import Punctuation
+from TTS.TTS.tts.utils.text.phonemizers.base import BasePhonemizer
+from TTS.TTS.tts.utils.text.punctuation import Punctuation
 
 
 def is_tool(name):
@@ -99,7 +99,7 @@ class ESpeak(BasePhonemizer):
 
     Example:
 
-        >>> from TTS.tts.utils.text.phonemizers import ESpeak
+        >>> from TTS.TTS.tts.utils.text.phonemizers import ESpeak
         >>> phonemizer = ESpeak("tr")
         >>> phonemizer.phonemize("Bu Türkçe, bir örnektir.", separator="|")
         'b|ʊ t|ˈø|r|k|tʃ|ɛ, b|ɪ|r œ|r|n|ˈɛ|c|t|ɪ|r.'

@@ -14,7 +14,7 @@ class ParallelWaveganConfig(BaseGANVocoderConfig):
             'parallel_wavegan_discriminator`.
         discriminator_model_params (dict): The discriminator model kwargs. Defaults to
             '{"num_layers": 10}`
-        generator_model (str): One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+        generator_model (str): One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `parallel_wavegan_generator`.
         generator_model_param (dict):
             The generator model kwargs. Defaults to `{"upsample_factors": [4, 4, 4, 4], "stacks": 3, "num_res_blocks": 30}`.

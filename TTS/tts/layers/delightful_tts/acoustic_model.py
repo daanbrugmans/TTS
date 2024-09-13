@@ -6,19 +6,19 @@ import torch.nn.functional as F
 from coqpit import Coqpit
 from torch import nn
 
-from TTS.tts.layers.delightful_tts.conformer import Conformer
-from TTS.tts.layers.delightful_tts.encoders import (
+from TTS.TTS.tts.layers.delightful_tts.conformer import Conformer
+from TTS.TTS.tts.layers.delightful_tts.encoders import (
     PhonemeLevelProsodyEncoder,
     UtteranceLevelProsodyEncoder,
     get_mask_from_lengths,
 )
-from TTS.tts.layers.delightful_tts.energy_adaptor import EnergyAdaptor
-from TTS.tts.layers.delightful_tts.networks import EmbeddingPadded, positional_encoding
-from TTS.tts.layers.delightful_tts.phoneme_prosody_predictor import PhonemeProsodyPredictor
-from TTS.tts.layers.delightful_tts.pitch_adaptor import PitchAdaptor
-from TTS.tts.layers.delightful_tts.variance_predictor import VariancePredictor
-from TTS.tts.layers.generic.aligner import AlignmentNetwork
-from TTS.tts.utils.helpers import generate_path, maximum_path, sequence_mask
+from TTS.TTS.tts.layers.delightful_tts.energy_adaptor import EnergyAdaptor
+from TTS.TTS.tts.layers.delightful_tts.networks import EmbeddingPadded, positional_encoding
+from TTS.TTS.tts.layers.delightful_tts.phoneme_prosody_predictor import PhonemeProsodyPredictor
+from TTS.TTS.tts.layers.delightful_tts.pitch_adaptor import PitchAdaptor
+from TTS.TTS.tts.layers.delightful_tts.variance_predictor import VariancePredictor
+from TTS.TTS.tts.layers.generic.aligner import AlignmentNetwork
+from TTS.TTS.tts.utils.helpers import generate_path, maximum_path, sequence_mask
 
 
 class AcousticModel(torch.nn.Module):

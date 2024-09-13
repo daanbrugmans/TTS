@@ -5,10 +5,10 @@ import torch
 from trainer import Trainer, TrainerArgs
 
 from tests import get_tests_output_path
-from TTS.config.shared_configs import BaseDatasetConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.layers.xtts.dvae import DiscreteVAE
-from TTS.tts.layers.xtts.trainer.gpt_trainer import GPTArgs, GPTTrainer, GPTTrainerConfig, XttsAudioConfig
+from TTS.TTS.config.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.layers.xtts.dvae import DiscreteVAE
+from TTS.TTS.tts.layers.xtts.trainer.gpt_trainer import GPTArgs, GPTTrainer, GPTTrainerConfig, XttsAudioConfig
 
 config_dataset = BaseDatasetConfig(
     formatter="ljspeech",

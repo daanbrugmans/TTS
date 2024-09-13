@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
-from TTS.tts.models.xtts import XttsArgs, XttsAudioConfig
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.models.xtts import XttsArgs, XttsAudioConfig
 
 
 @dataclass
@@ -61,7 +61,7 @@ class XttsConfig(BaseTTSConfig):
 
     Example:
 
-        >>> from TTS.tts.configs.xtts_config import XttsConfig
+        >>> from TTS.TTS.tts.configs.xtts_config import XttsConfig
         >>> config = XttsConfig()
     """
 

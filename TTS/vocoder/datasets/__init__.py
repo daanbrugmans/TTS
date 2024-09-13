@@ -3,11 +3,11 @@ from typing import List
 from coqpit import Coqpit
 from torch.utils.data import Dataset
 
-from TTS.utils.audio import AudioProcessor
-from TTS.vocoder.datasets.gan_dataset import GANDataset
-from TTS.vocoder.datasets.preprocess import load_wav_data, load_wav_feat_data
-from TTS.vocoder.datasets.wavegrad_dataset import WaveGradDataset
-from TTS.vocoder.datasets.wavernn_dataset import WaveRNNDataset
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.vocoder.datasets.gan_dataset import GANDataset
+from TTS.TTS.vocoder.datasets.preprocess import load_wav_data, load_wav_feat_data
+from TTS.TTS.vocoder.datasets.wavegrad_dataset import WaveGradDataset
+from TTS.TTS.vocoder.datasets.wavernn_dataset import WaveRNNDataset
 
 
 def setup_dataset(config: Coqpit, ap: AudioProcessor, is_eval: bool, data_items: List, verbose: bool) -> Dataset:

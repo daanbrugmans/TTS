@@ -3,10 +3,10 @@ from dataclasses import dataclass, field
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config import load_config, register_config
-from TTS.utils.audio import AudioProcessor
-from TTS.vocoder.datasets.preprocess import load_wav_data, load_wav_feat_data
-from TTS.vocoder.models import setup_model
+from TTS.TTS.config import load_config, register_config
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.vocoder.datasets.preprocess import load_wav_data, load_wav_feat_data
+from TTS.TTS.vocoder.models import setup_model
 
 
 @dataclass
@@ -38,7 +38,7 @@ def main():
                 config.parse_known_args(config_overrides, relaxed_parser=True)
         else:
             # init from console args
-            from TTS.config.shared_configs import BaseTrainingConfig  # pylint: disable=import-outside-toplevel
+            from TTS.TTS.config.shared_configs import BaseTrainingConfig  # pylint: disable=import-outside-toplevel
 
             config_base = BaseTrainingConfig()
             config_base.parse_known_args(config_overrides)

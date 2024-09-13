@@ -11,14 +11,14 @@ from torch import nn
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 
-from TTS.tts.utils.visual import plot_spectrogram
-from TTS.utils.audio import AudioProcessor
-from TTS.utils.audio.numpy_transforms import mulaw_decode
-from TTS.utils.io import load_fsspec
-from TTS.vocoder.datasets.wavernn_dataset import WaveRNNDataset
-from TTS.vocoder.layers.losses import WaveRNNLoss
-from TTS.vocoder.models.base_vocoder import BaseVocoder
-from TTS.vocoder.utils.distribution import sample_from_discretized_mix_logistic, sample_from_gaussian
+from TTS.TTS.tts.utils.visual import plot_spectrogram
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.utils.audio.numpy_transforms import mulaw_decode
+from TTS.TTS.utils.io import load_fsspec
+from TTS.TTS.vocoder.datasets.wavernn_dataset import WaveRNNDataset
+from TTS.TTS.vocoder.layers.losses import WaveRNNLoss
+from TTS.TTS.vocoder.models.base_vocoder import BaseVocoder
+from TTS.TTS.vocoder.utils.distribution import sample_from_discretized_mix_logistic, sample_from_gaussian
 
 
 def stream(string, variables):
@@ -203,7 +203,7 @@ class Wavernn(BaseVocoder):
             RuntimeError: [description]
 
         Examples:
-            >>> from TTS.vocoder.configs import WavernnConfig
+            >>> from TTS.TTS.vocoder.configs import WavernnConfig
             >>> config = WavernnConfig()
             >>> model = Wavernn(config)
 

@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
+from TTS.TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
 
 
 @dataclass
@@ -9,7 +9,7 @@ class MultibandMelganConfig(BaseGANVocoderConfig):
 
     Example:
 
-        >>> from TTS.vocoder.configs import MultibandMelganConfig
+        >>> from TTS.TTS.vocoder.configs import MultibandMelganConfig
         >>> config = MultibandMelganConfig()
 
     Args:
@@ -23,7 +23,7 @@ class MultibandMelganConfig(BaseGANVocoderConfig):
                 "max_channels": 512,
                 "downsample_factors": [4, 4, 4]
             }`
-        generator_model (str): One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+        generator_model (str): One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `melgan_generator`.
         generator_model_param (dict):
             The generator model parameters. Defaults to `{"upsample_factors": [8, 4, 2], "num_res_blocks": 4}`.

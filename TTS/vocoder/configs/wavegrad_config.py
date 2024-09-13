@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 
-from TTS.vocoder.configs.shared_configs import BaseVocoderConfig
-from TTS.vocoder.models.wavegrad import WavegradArgs
+from TTS.TTS.vocoder.configs.shared_configs import BaseVocoderConfig
+from TTS.TTS.vocoder.models.wavegrad import WavegradArgs
 
 
 @dataclass
@@ -9,13 +9,13 @@ class WavegradConfig(BaseVocoderConfig):
     """Defines parameters for WaveGrad vocoder.
     Example:
 
-        >>> from TTS.vocoder.configs import WavegradConfig
+        >>> from TTS.TTS.vocoder.configs import WavegradConfig
         >>> config = WavegradConfig()
 
     Args:
         model (str):
             Model name used for selecting the right model at initialization. Defaults to `wavegrad`.
-        generator_model (str): One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+        generator_model (str): One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `wavegrad`.
         model_params (WavegradArgs): Model parameters. Check `WavegradArgs` for default values.
         target_loss (str):

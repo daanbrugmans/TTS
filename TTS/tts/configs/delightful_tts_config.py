@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
-from TTS.tts.models.delightful_tts import DelightfulTtsArgs, DelightfulTtsAudioConfig, VocoderConfig
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.models.delightful_tts import DelightfulTtsArgs, DelightfulTtsAudioConfig, VocoderConfig
 
 
 @dataclass

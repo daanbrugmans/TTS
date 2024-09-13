@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn  # pylint: disable=consider-using-from-import
 import torch.nn.functional as F
 
-from TTS.tts.layers.delightful_tts.conv_layers import ConvNorm
+from TTS.TTS.tts.layers.delightful_tts.conv_layers import ConvNorm
 
 
 def initialize_embeddings(shape: Tuple[int]) -> torch.Tensor:

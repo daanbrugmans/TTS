@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 
-from TTS.encoder.models.base_encoder import BaseEncoder
+from TTS.TTS.encoder.models.base_encoder import BaseEncoder
 
 
 class LSTMWithProjection(nn.Module):

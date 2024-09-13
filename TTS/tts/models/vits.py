@@ -18,25 +18,25 @@ from torch.utils.data.sampler import WeightedRandomSampler
 from trainer.torch import DistributedSampler, DistributedSamplerWrapper
 from trainer.trainer_utils import get_optimizer, get_scheduler
 
-from TTS.tts.configs.shared_configs import CharactersConfig
-from TTS.tts.datasets.dataset import TTSDataset, _parse_sample
-from TTS.tts.layers.glow_tts.duration_predictor import DurationPredictor
-from TTS.tts.layers.vits.discriminator import VitsDiscriminator
-from TTS.tts.layers.vits.networks import PosteriorEncoder, ResidualCouplingBlocks, TextEncoder
-from TTS.tts.layers.vits.stochastic_duration_predictor import StochasticDurationPredictor
-from TTS.tts.models.base_tts import BaseTTS
-from TTS.tts.utils.fairseq import rehash_fairseq_vits_checkpoint
-from TTS.tts.utils.helpers import generate_path, maximum_path, rand_segments, segment, sequence_mask
-from TTS.tts.utils.languages import LanguageManager
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.synthesis import synthesis
-from TTS.tts.utils.text.characters import BaseCharacters, BaseVocabulary, _characters, _pad, _phonemes, _punctuations
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.tts.utils.visual import plot_alignment
-from TTS.utils.io import load_fsspec
-from TTS.utils.samplers import BucketBatchSampler
-from TTS.vocoder.models.hifigan_generator import HifiganGenerator
-from TTS.vocoder.utils.generic_utils import plot_results
+from TTS.TTS.tts.configs.shared_configs import CharactersConfig
+from TTS.TTS.tts.datasets.dataset import TTSDataset, _parse_sample
+from TTS.TTS.tts.layers.glow_tts.duration_predictor import DurationPredictor
+from TTS.TTS.tts.layers.vits.discriminator import VitsDiscriminator
+from TTS.TTS.tts.layers.vits.networks import PosteriorEncoder, ResidualCouplingBlocks, TextEncoder
+from TTS.TTS.tts.layers.vits.stochastic_duration_predictor import StochasticDurationPredictor
+from TTS.TTS.tts.models.base_tts import BaseTTS
+from TTS.TTS.tts.utils.fairseq import rehash_fairseq_vits_checkpoint
+from TTS.TTS.tts.utils.helpers import generate_path, maximum_path, rand_segments, segment, sequence_mask
+from TTS.TTS.tts.utils.languages import LanguageManager
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.synthesis import synthesis
+from TTS.TTS.tts.utils.text.characters import BaseCharacters, BaseVocabulary, _characters, _pad, _phonemes, _punctuations
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.tts.utils.visual import plot_alignment
+from TTS.TTS.utils.io import load_fsspec
+from TTS.TTS.utils.samplers import BucketBatchSampler
+from TTS.TTS.vocoder.models.hifigan_generator import HifiganGenerator
+from TTS.TTS.vocoder.utils.generic_utils import plot_results
 
 ##############################
 # IO / Feature extraction
@@ -622,8 +622,8 @@ class Vits(BaseTTS):
     Check :class:`TTS.tts.configs.vits_config.VitsConfig` for class arguments.
 
     Examples:
-        >>> from TTS.tts.configs.vits_config import VitsConfig
-        >>> from TTS.tts.models.vits import Vits
+        >>> from TTS.TTS.tts.configs.vits_config import VitsConfig
+        >>> from TTS.TTS.tts.models.vits import Vits
         >>> config = VitsConfig()
         >>> model = Vits(config)
     """
@@ -1688,7 +1688,7 @@ class Vits(BaseTTS):
     def get_criterion(self):
         """Get criterions for each optimizer. The index in the output list matches the optimizer idx used in
         `train_step()`"""
-        from TTS.tts.layers.losses import (  # pylint: disable=import-outside-toplevel
+        from TTS.TTS.tts.layers.losses import (  # pylint: disable=import-outside-toplevel
             VitsDiscriminatorLoss,
             VitsGeneratorLoss,
         )
@@ -1737,7 +1737,7 @@ class Vits(BaseTTS):
         """
         import json
 
-        from TTS.tts.utils.text.cleaners import basic_cleaners
+        from TTS.TTS.tts.utils.text.cleaners import basic_cleaners
 
         self.disc = None
         # set paths
@@ -1777,7 +1777,7 @@ class Vits(BaseTTS):
             samples (Union[List[List], List[Dict]]): Training samples to parse speaker ids for training.
                 Defaults to None.
         """
-        from TTS.utils.audio import AudioProcessor
+        from TTS.TTS.utils.audio import AudioProcessor
 
         upsample_rate = torch.prod(torch.as_tensor(config.model_args.upsample_rates_decoder)).item()
 

@@ -1,7 +1,7 @@
 from typing import Dict
 
-from TTS.tts.utils.text.japanese.phonemizer import japanese_text_to_phonemes
-from TTS.tts.utils.text.phonemizers.base import BasePhonemizer
+from TTS.TTS.tts.utils.text.japanese.phonemizer import japanese_text_to_phonemes
+from TTS.TTS.tts.utils.text.phonemizers.base import BasePhonemizer
 
 _DEF_JA_PUNCS = "、.,[]()?!〽~『』「」【】"
 
@@ -21,7 +21,7 @@ class JA_JP_Phonemizer(BasePhonemizer):
 
     Example:
 
-        >>> from TTS.tts.utils.text.phonemizers import JA_JP_Phonemizer
+        >>> from TTS.TTS.tts.utils.text.phonemizers import JA_JP_Phonemizer
         >>> phonemizer = JA_JP_Phonemizer()
         >>> phonemizer.phonemize("どちらに行きますか？", separator="|")
         'd|o|c|h|i|r|a|n|i|i|k|i|m|a|s|u|k|a|?'

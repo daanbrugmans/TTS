@@ -2,13 +2,13 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config.shared_configs import BaseAudioConfig
-from TTS.tts.configs.shared_configs import BaseDatasetConfig, CapacitronVAEConfig
-from TTS.tts.configs.tacotron2_config import Tacotron2Config
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models.tacotron2 import Tacotron2
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio import AudioProcessor
+from TTS.TTS.config.shared_configs import BaseAudioConfig
+from TTS.TTS.tts.configs.shared_configs import BaseDatasetConfig, CapacitronVAEConfig
+from TTS.TTS.tts.configs.tacotron2_config import Tacotron2Config
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models.tacotron2 import Tacotron2
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio import AudioProcessor
 
 output_path = os.path.dirname(os.path.abspath(__file__))
 

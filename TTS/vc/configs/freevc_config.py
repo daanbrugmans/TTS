@@ -3,7 +3,7 @@ from typing import List, Optional
 
 from coqpit import Coqpit
 
-from TTS.vc.configs.shared_configs import BaseVCConfig
+from TTS.TTS.vc.configs.shared_configs import BaseVCConfig
 
 
 @dataclass
@@ -233,7 +233,7 @@ class FreeVCConfig(BaseVCConfig):
 
     Example:
 
-        >>> from TTS.vc.configs.freevc_config import FreeVCConfig
+        >>> from TTS.TTS.vc.configs.freevc_config import FreeVCConfig
         >>> config = FreeVCConfig()
     """
 

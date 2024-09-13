@@ -1,8 +1,8 @@
 import torch
 
-from TTS.tts.layers.feed_forward.decoder import Decoder
-from TTS.tts.layers.feed_forward.encoder import Encoder
-from TTS.tts.utils.helpers import sequence_mask
+from TTS.TTS.tts.layers.feed_forward.decoder import Decoder
+from TTS.TTS.tts.layers.feed_forward.encoder import Encoder
+from TTS.TTS.tts.utils.helpers import sequence_mask
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 

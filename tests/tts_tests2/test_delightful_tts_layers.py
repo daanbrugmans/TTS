@@ -1,11 +1,11 @@
 import torch
 
-from TTS.tts.configs.delightful_tts_config import DelightfulTTSConfig
-from TTS.tts.layers.delightful_tts.acoustic_model import AcousticModel
-from TTS.tts.models.delightful_tts import DelightfulTtsArgs, VocoderConfig
-from TTS.tts.utils.helpers import rand_segments
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.vocoder.models.hifigan_generator import HifiganGenerator
+from TTS.TTS.tts.configs.delightful_tts_config import DelightfulTTSConfig
+from TTS.TTS.tts.layers.delightful_tts.acoustic_model import AcousticModel
+from TTS.TTS.tts.models.delightful_tts import DelightfulTtsArgs, VocoderConfig
+from TTS.TTS.tts.utils.helpers import rand_segments
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.vocoder.models.hifigan_generator import HifiganGenerator
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 

@@ -7,8 +7,8 @@ import fsspec
 import yaml
 from coqpit import Coqpit
 
-from TTS.config.shared_configs import *
-from TTS.utils.generic_utils import find_module
+from TTS.TTS.config.shared_configs import *
+from TTS.TTS.utils.generic_utils import find_module
 
 
 def read_json_with_comments(json_path):
@@ -37,7 +37,7 @@ def register_config(model_name: str) -> Coqpit:
 
     # TODO: fix this
     if model_name == "xtts":
-        from TTS.tts.configs.xtts_config import XttsConfig
+        from TTS.TTS.tts.configs.xtts_config import XttsConfig
 
         config_class = XttsConfig
     paths = ["TTS.tts.configs", "TTS.vocoder.configs", "TTS.encoder.configs", "TTS.vc.configs"]

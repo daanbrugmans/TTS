@@ -1,10 +1,10 @@
 from typing import Callable, Dict, List, Union
 
-from TTS.tts.utils.text import cleaners
-from TTS.tts.utils.text.characters import Graphemes, IPAPhonemes
-from TTS.tts.utils.text.phonemizers import DEF_LANG_TO_PHONEMIZER, get_phonemizer_by_name
-from TTS.tts.utils.text.phonemizers.multi_phonemizer import MultiPhonemizer
-from TTS.utils.generic_utils import get_import_path, import_class
+from TTS.TTS.tts.utils.text import cleaners
+from TTS.TTS.tts.utils.text.characters import Graphemes, IPAPhonemes
+from TTS.TTS.tts.utils.text.phonemizers import DEF_LANG_TO_PHONEMIZER, get_phonemizer_by_name
+from TTS.TTS.tts.utils.text.phonemizers.multi_phonemizer import MultiPhonemizer
+from TTS.TTS.utils.generic_utils import get_import_path, import_class
 
 
 class TTSTokenizer:
@@ -27,7 +27,7 @@ class TTSTokenizer:
 
     Example:
 
-        >>> from TTS.tts.utils.text.tokenizer import TTSTokenizer
+        >>> from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
         >>> tokenizer = TTSTokenizer(use_phonemes=False, characters=Graphemes())
         >>> text = "Hello world!"
         >>> ids = tokenizer.text_to_ids(text)

@@ -8,10 +8,10 @@ import os
 import numpy as np
 from tqdm import tqdm
 
-# from TTS.utils.io import load_config
-from TTS.config import load_config
-from TTS.tts.datasets import load_tts_samples
-from TTS.utils.audio import AudioProcessor
+# from TTS.TTS.utils.io import load_config
+from TTS.TTS.config import load_config
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.utils.audio import AudioProcessor
 
 
 def main():

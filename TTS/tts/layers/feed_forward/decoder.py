@@ -1,10 +1,10 @@
 import torch
 from torch import nn
 
-from TTS.tts.layers.generic.res_conv_bn import Conv1dBN, Conv1dBNBlock, ResidualConv1dBNBlock
-from TTS.tts.layers.generic.transformer import FFTransformerBlock
-from TTS.tts.layers.generic.wavenet import WNBlocks
-from TTS.tts.layers.glow_tts.transformer import RelativePositionTransformer
+from TTS.TTS.tts.layers.generic.res_conv_bn import Conv1dBN, Conv1dBNBlock, ResidualConv1dBNBlock
+from TTS.TTS.tts.layers.generic.transformer import FFTransformerBlock
+from TTS.TTS.tts.layers.generic.wavenet import WNBlocks
+from TTS.TTS.tts.layers.glow_tts.transformer import RelativePositionTransformer
 
 
 class WaveNetDecoder(nn.Module):

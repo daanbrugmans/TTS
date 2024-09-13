@@ -2,11 +2,11 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.utils.audio import AudioProcessor
-from TTS.utils.downloaders import download_thorsten_de
-from TTS.vocoder.configs import WavegradConfig
-from TTS.vocoder.datasets.preprocess import load_wav_data
-from TTS.vocoder.models.wavegrad import Wavegrad
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.utils.downloaders import download_thorsten_de
+from TTS.TTS.vocoder.configs import WavegradConfig
+from TTS.TTS.vocoder.datasets.preprocess import load_wav_data
+from TTS.TTS.vocoder.models.wavegrad import Wavegrad
 
 output_path = os.path.dirname(os.path.abspath(__file__))
 config = WavegradConfig(

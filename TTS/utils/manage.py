@@ -11,8 +11,8 @@ import fsspec
 import requests
 from tqdm import tqdm
 
-from TTS.config import load_config, read_json_with_comments
-from TTS.utils.generic_utils import get_user_data_dir
+from TTS.TTS.config import load_config, read_json_with_comments
+from TTS.TTS.utils.generic_utils import get_user_data_dir
 
 LICENSE_URLS = {
     "cc by-nc-nd 4.0": "https://creativecommons.org/licenses/by-nc-nd/4.0/",

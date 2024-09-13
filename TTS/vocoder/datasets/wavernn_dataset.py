@@ -2,7 +2,7 @@ import numpy as np
 import torch
 from torch.utils.data import Dataset
 
-from TTS.utils.audio.numpy_transforms import mulaw_encode, quantize
+from TTS.TTS.utils.audio.numpy_transforms import mulaw_encode, quantize
 
 
 class WaveRNNDataset(Dataset):

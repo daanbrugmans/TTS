@@ -6,8 +6,8 @@ import numpy as np
 import torch
 from coqpit import Coqpit
 
-from TTS.config import check_config_and_model_args
-from TTS.tts.utils.managers import BaseIDManager
+from TTS.TTS.config import check_config_and_model_args
+from TTS.TTS.tts.utils.managers import BaseIDManager
 
 
 class LanguageManager(BaseIDManager):

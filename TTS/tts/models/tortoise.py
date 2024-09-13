@@ -10,18 +10,18 @@ import torchaudio
 from coqpit import Coqpit
 from tqdm import tqdm
 
-from TTS.tts.layers.tortoise.arch_utils import TorchMelSpectrogram
-from TTS.tts.layers.tortoise.audio_utils import denormalize_tacotron_mel, load_voice, wav_to_univnet_mel
-from TTS.tts.layers.tortoise.autoregressive import UnifiedVoice
-from TTS.tts.layers.tortoise.classifier import AudioMiniEncoderWithClassifierHead
-from TTS.tts.layers.tortoise.clvp import CLVP
-from TTS.tts.layers.tortoise.diffusion import SpacedDiffusion, get_named_beta_schedule, space_timesteps
-from TTS.tts.layers.tortoise.diffusion_decoder import DiffusionTts
-from TTS.tts.layers.tortoise.random_latent_generator import RandomLatentConverter
-from TTS.tts.layers.tortoise.tokenizer import VoiceBpeTokenizer
-from TTS.tts.layers.tortoise.vocoder import VocConf, VocType
-from TTS.tts.layers.tortoise.wav2vec_alignment import Wav2VecAlignment
-from TTS.tts.models.base_tts import BaseTTS
+from TTS.TTS.tts.layers.tortoise.arch_utils import TorchMelSpectrogram
+from TTS.TTS.tts.layers.tortoise.audio_utils import denormalize_tacotron_mel, load_voice, wav_to_univnet_mel
+from TTS.TTS.tts.layers.tortoise.autoregressive import UnifiedVoice
+from TTS.TTS.tts.layers.tortoise.classifier import AudioMiniEncoderWithClassifierHead
+from TTS.TTS.tts.layers.tortoise.clvp import CLVP
+from TTS.TTS.tts.layers.tortoise.diffusion import SpacedDiffusion, get_named_beta_schedule, space_timesteps
+from TTS.TTS.tts.layers.tortoise.diffusion_decoder import DiffusionTts
+from TTS.TTS.tts.layers.tortoise.random_latent_generator import RandomLatentConverter
+from TTS.TTS.tts.layers.tortoise.tokenizer import VoiceBpeTokenizer
+from TTS.TTS.tts.layers.tortoise.vocoder import VocConf, VocType
+from TTS.TTS.tts.layers.tortoise.wav2vec_alignment import Wav2VecAlignment
+from TTS.TTS.tts.models.base_tts import BaseTTS
 
 
 def pad_or_truncate(t, length):
@@ -312,8 +312,8 @@ class Tortoise(BaseTTS):
     Currently only supports inference.
 
     Examples:
-        >>> from TTS.tts.configs.tortoise_config import TortoiseConfig
-        >>> from TTS.tts.models.tortoise import Tortoise
+        >>> from TTS.TTS.tts.configs.tortoise_config import TortoiseConfig
+        >>> from TTS.TTS.tts.models.tortoise import Tortoise
         >>> config = TortoiseConfig()
         >>> model = Tortoise.inif_from_config(config)
         >>> model.load_checkpoint(config, checkpoint_dir="paths/to/models_dir/", eval=True)

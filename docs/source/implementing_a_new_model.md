@@ -67,7 +67,7 @@
 You can start implementing your model by copying the following base class.
 
 ```python
-from TTS.tts.models.base_tts import BaseTTS
+from TTS.TTS.tts.models.base_tts import BaseTTS
 
 
 class MyModel(BaseTTS):

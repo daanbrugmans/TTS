@@ -2,13 +2,13 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config.shared_configs import BaseAudioConfig, BaseDatasetConfig
-from TTS.tts.configs.fastspeech2_config import Fastspeech2Config
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models.forward_tts import ForwardTTS
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio import AudioProcessor
-from TTS.utils.manage import ModelManager
+from TTS.TTS.config.shared_configs import BaseAudioConfig, BaseDatasetConfig
+from TTS.TTS.tts.configs.fastspeech2_config import Fastspeech2Config
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models.forward_tts import ForwardTTS
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.utils.manage import ModelManager
 
 output_path = os.path.dirname(os.path.abspath(__file__))
 

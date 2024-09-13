@@ -27,7 +27,7 @@ A breakdown of a simple script that trains a GlowTTS model on the LJspeech datas
     In this example, we download and use the LJSpeech dataset. Set the download directory based on your preferences.
 
     ```bash
-    $ python -c 'from TTS.utils.downloaders import download_ljspeech; download_ljspeech("../recipes/ljspeech/");'
+    $ python -c 'from TTS.TTS.utils.downloaders import download_ljspeech; download_ljspeech("../recipes/ljspeech/");'
     ```
 
 1. Define `train.py`.

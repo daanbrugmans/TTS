@@ -2,10 +2,10 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.utils.audio import AudioProcessor
-from TTS.vocoder.configs import MultibandMelganConfig
-from TTS.vocoder.datasets.preprocess import load_wav_data
-from TTS.vocoder.models.gan import GAN
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.vocoder.configs import MultibandMelganConfig
+from TTS.TTS.vocoder.datasets.preprocess import load_wav_data
+from TTS.TTS.vocoder.models.gan import GAN
 
 output_path = os.path.dirname(os.path.abspath(__file__))
 

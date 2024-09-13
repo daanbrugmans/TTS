@@ -12,15 +12,15 @@ from trainer.io import copy_model_files, save_best_model, save_checkpoint
 from trainer.torch import NoamLR
 from trainer.trainer_utils import get_optimizer
 
-from TTS.encoder.dataset import EncoderDataset
-from TTS.encoder.utils.generic_utils import setup_encoder_model
-from TTS.encoder.utils.training import init_training
-from TTS.encoder.utils.visual import plot_embeddings
-from TTS.tts.datasets import load_tts_samples
-from TTS.utils.audio import AudioProcessor
-from TTS.utils.generic_utils import count_parameters, remove_experiment_folder
-from TTS.utils.samplers import PerfectBatchSampler
-from TTS.utils.training import check_update
+from TTS.TTS.encoder.dataset import EncoderDataset
+from TTS.TTS.encoder.utils.generic_utils import setup_encoder_model
+from TTS.TTS.encoder.utils.training import init_training
+from TTS.TTS.encoder.utils.visual import plot_embeddings
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.utils.generic_utils import count_parameters, remove_experiment_folder
+from TTS.TTS.utils.samplers import PerfectBatchSampler
+from TTS.TTS.utils.training import check_update
 
 torch.backends.cudnn.enabled = True
 torch.backends.cudnn.benchmark = True

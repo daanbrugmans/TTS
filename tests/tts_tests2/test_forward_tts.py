@@ -1,7 +1,7 @@
 import torch as T
 
-from TTS.tts.models.forward_tts import ForwardTTS, ForwardTTSArgs
-from TTS.tts.utils.helpers import sequence_mask
+from TTS.TTS.tts.models.forward_tts import ForwardTTS, ForwardTTSArgs
+from TTS.TTS.tts.utils.helpers import sequence_mask
 
 # pylint: disable=unused-variable
 

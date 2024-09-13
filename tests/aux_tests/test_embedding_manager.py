@@ -6,10 +6,10 @@ import torch
 from trainer.io import save_checkpoint
 
 from tests import get_tests_input_path
-from TTS.config import load_config
-from TTS.encoder.utils.generic_utils import setup_encoder_model
-from TTS.tts.utils.managers import EmbeddingManager
-from TTS.utils.audio import AudioProcessor
+from TTS.TTS.config import load_config
+from TTS.TTS.encoder.utils.generic_utils import setup_encoder_model
+from TTS.TTS.tts.utils.managers import EmbeddingManager
+from TTS.TTS.utils.audio import AudioProcessor
 
 encoder_config_path = os.path.join(get_tests_input_path(), "test_speaker_encoder_config.json")
 encoder_model_path = os.path.join(get_tests_input_path(), "checkpoint_0.pth")

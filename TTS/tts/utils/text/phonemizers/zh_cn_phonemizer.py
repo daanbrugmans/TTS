@@ -1,7 +1,7 @@
 from typing import Dict
 
-from TTS.tts.utils.text.chinese_mandarin.phonemizer import chinese_text_to_phonemes
-from TTS.tts.utils.text.phonemizers.base import BasePhonemizer
+from TTS.TTS.tts.utils.text.chinese_mandarin.phonemizer import chinese_text_to_phonemes
+from TTS.TTS.tts.utils.text.phonemizers.base import BasePhonemizer
 
 _DEF_ZH_PUNCS = "、.,[]()?!〽~『』「」【】"
 

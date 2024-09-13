@@ -1,9 +1,9 @@
 import os
 
-from TTS.encoder.configs.speaker_encoder_config import SpeakerEncoderConfig
+from TTS.TTS.encoder.configs.speaker_encoder_config import SpeakerEncoderConfig
 
-# from TTS.encoder.configs.emotion_encoder_config import EmotionEncoderConfig
-from TTS.tts.configs.shared_configs import BaseDatasetConfig
+# from TTS.TTS.encoder.configs.emotion_encoder_config import EmotionEncoderConfig
+from TTS.TTS.tts.configs.shared_configs import BaseDatasetConfig
 
 CURRENT_PATH = os.getcwd()
 # change the root path to the TTS root path

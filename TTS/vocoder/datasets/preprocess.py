@@ -6,8 +6,8 @@ import numpy as np
 from coqpit import Coqpit
 from tqdm import tqdm
 
-from TTS.utils.audio import AudioProcessor
-from TTS.utils.audio.numpy_transforms import mulaw_encode, quantize
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.utils.audio.numpy_transforms import mulaw_encode, quantize
 
 
 def preprocess_wav_files(out_path: str, config: Coqpit, ap: AudioProcessor):

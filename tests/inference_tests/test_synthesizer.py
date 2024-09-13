@@ -4,9 +4,9 @@ import unittest
 from trainer.io import save_checkpoint
 
 from tests import get_tests_input_path
-from TTS.config import load_config
-from TTS.tts.models import setup_model
-from TTS.utils.synthesizer import Synthesizer
+from TTS.TTS.config import load_config
+from TTS.TTS.tts.models import setup_model
+from TTS.TTS.utils.synthesizer import Synthesizer
 
 
 class SynthesizerTest(unittest.TestCase):

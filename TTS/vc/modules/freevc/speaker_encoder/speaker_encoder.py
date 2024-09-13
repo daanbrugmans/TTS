@@ -6,9 +6,9 @@ import numpy as np
 import torch
 from torch import nn
 
-from TTS.utils.io import load_fsspec
-from TTS.vc.modules.freevc.speaker_encoder import audio
-from TTS.vc.modules.freevc.speaker_encoder.hparams import *
+from TTS.TTS.utils.io import load_fsspec
+from TTS.TTS.vc.modules.freevc.speaker_encoder import audio
+from TTS.TTS.vc.modules.freevc.speaker_encoder.hparams import *
 
 
 class SpeakerEncoder(nn.Module):

@@ -4,8 +4,8 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from TTS.tts.layers.generic.normalization import LayerNorm2
-from TTS.tts.layers.vits.transforms import piecewise_rational_quadratic_transform
+from TTS.TTS.tts.layers.generic.normalization import LayerNorm2
+from TTS.TTS.tts.layers.vits.transforms import piecewise_rational_quadratic_transform
 
 
 class DilatedDepthSeparableConv(nn.Module):

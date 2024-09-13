@@ -7,7 +7,7 @@ from coqpit import Coqpit
 from encodec import EncodecModel
 from transformers import BertTokenizer
 
-from TTS.tts.layers.bark.inference_funcs import (
+from TTS.TTS.tts.layers.bark.inference_funcs import (
     codec_decode,
     generate_coarse,
     generate_fine,
@@ -15,10 +15,10 @@ from TTS.tts.layers.bark.inference_funcs import (
     generate_voice,
     load_voice,
 )
-from TTS.tts.layers.bark.load_model import load_model
-from TTS.tts.layers.bark.model import GPT
-from TTS.tts.layers.bark.model_fine import FineGPT
-from TTS.tts.models.base_tts import BaseTTS
+from TTS.TTS.tts.layers.bark.load_model import load_model
+from TTS.TTS.tts.layers.bark.model import GPT
+from TTS.TTS.tts.layers.bark.model_fine import FineGPT
+from TTS.TTS.tts.models.base_tts import BaseTTS
 
 
 @dataclass

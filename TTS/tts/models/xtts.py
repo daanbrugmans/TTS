@@ -7,13 +7,13 @@ import torch.nn.functional as F
 import torchaudio
 from coqpit import Coqpit
 
-from TTS.tts.layers.xtts.gpt import GPT
-from TTS.tts.layers.xtts.hifigan_decoder import HifiDecoder
-from TTS.tts.layers.xtts.stream_generator import init_stream_support
-from TTS.tts.layers.xtts.tokenizer import VoiceBpeTokenizer, split_sentence
-from TTS.tts.layers.xtts.xtts_manager import SpeakerManager, LanguageManager
-from TTS.tts.models.base_tts import BaseTTS
-from TTS.utils.io import load_fsspec
+from TTS.TTS.tts.layers.xtts.gpt import GPT
+from TTS.TTS.tts.layers.xtts.hifigan_decoder import HifiDecoder
+from TTS.TTS.tts.layers.xtts.stream_generator import init_stream_support
+from TTS.TTS.tts.layers.xtts.tokenizer import VoiceBpeTokenizer, split_sentence
+from TTS.TTS.tts.layers.xtts.xtts_manager import SpeakerManager, LanguageManager
+from TTS.TTS.tts.models.base_tts import BaseTTS
+from TTS.TTS.utils.io import load_fsspec
 
 init_stream_support()
 
@@ -194,8 +194,8 @@ class Xtts(BaseTTS):
     ❗ Currently it only supports inference.
 
     Examples:
-        >>> from TTS.tts.configs.xtts_config import XttsConfig
-        >>> from TTS.tts.models.xtts import Xtts
+        >>> from TTS.TTS.tts.configs.xtts_config import XttsConfig
+        >>> from TTS.TTS.tts.models.xtts import Xtts
         >>> config = XttsConfig()
         >>> model = Xtts.inif_from_config(config)
         >>> model.load_checkpoint(config, checkpoint_dir="paths/to/models_dir/", eval=True)

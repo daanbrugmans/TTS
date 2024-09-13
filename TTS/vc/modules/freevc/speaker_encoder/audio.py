@@ -7,7 +7,7 @@ import librosa
 import numpy as np
 from scipy.ndimage.morphology import binary_dilation
 
-from TTS.vc.modules.freevc.speaker_encoder.hparams import *
+from TTS.TTS.vc.modules.freevc.speaker_encoder.hparams import *
 
 int16_max = (2**15) - 1
 

@@ -1,8 +1,8 @@
 import numpy as np
 import torch
 
-from TTS.vocoder.models.melgan_discriminator import MelganDiscriminator
-from TTS.vocoder.models.melgan_multiscale_discriminator import MelganMultiscaleDiscriminator
+from TTS.TTS.vocoder.models.melgan_discriminator import MelganDiscriminator
+from TTS.TTS.vocoder.models.melgan_multiscale_discriminator import MelganMultiscaleDiscriminator
 
 
 def test_melgan_discriminator():

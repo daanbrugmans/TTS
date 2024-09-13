@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as F
 import torch.utils.data
 
-from TTS.tts.models.xtts import load_audio
+from TTS.TTS.tts.models.xtts import load_audio
 
 torch.set_num_threads(1)
 

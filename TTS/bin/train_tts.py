@@ -3,9 +3,9 @@ from dataclasses import dataclass, field
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config import load_config, register_config
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models import setup_model
+from TTS.TTS.config import load_config, register_config
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models import setup_model
 
 
 @dataclass
@@ -37,7 +37,7 @@ def main():
                 config.parse_known_args(config_overrides, relaxed_parser=True)
         else:
             # init from console args
-            from TTS.config.shared_configs import BaseTrainingConfig  # pylint: disable=import-outside-toplevel
+            from TTS.TTS.config.shared_configs import BaseTrainingConfig  # pylint: disable=import-outside-toplevel
 
             config_base = BaseTrainingConfig()
             config_base.parse_known_args(config_overrides)

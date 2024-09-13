@@ -3,8 +3,8 @@ import urllib.request
 
 import torch
 
-from TTS.utils.generic_utils import get_user_data_dir
-from TTS.vc.modules.freevc.wavlm.wavlm import WavLM, WavLMConfig
+from TTS.TTS.utils.generic_utils import get_user_data_dir
+from TTS.TTS.vc.modules.freevc.wavlm.wavlm import WavLM, WavLMConfig
 
 model_uri = "https://github.com/coqui-ai/TTS/releases/download/v0.13.0_models/WavLM-Large.pt"
 

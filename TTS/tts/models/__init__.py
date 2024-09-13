@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from TTS.utils.generic_utils import find_module
+from TTS.TTS.utils.generic_utils import find_module
 
 
 def setup_model(config: "Coqpit", samples: Union[List[List], List[Dict]] = None) -> "BaseTTS":

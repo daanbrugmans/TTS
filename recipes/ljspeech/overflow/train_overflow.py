@@ -2,13 +2,13 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config.shared_configs import BaseAudioConfig
-from TTS.tts.configs.overflow_config import OverflowConfig
-from TTS.tts.configs.shared_configs import BaseDatasetConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models.overflow import Overflow
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio import AudioProcessor
+from TTS.TTS.config.shared_configs import BaseAudioConfig
+from TTS.TTS.tts.configs.overflow_config import OverflowConfig
+from TTS.TTS.tts.configs.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models.overflow import Overflow
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio import AudioProcessor
 
 output_path = os.path.dirname(os.path.abspath(__file__))
 

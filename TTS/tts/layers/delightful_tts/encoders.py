@@ -4,9 +4,9 @@ import torch
 import torch.nn as nn  # pylint: disable=consider-using-from-import
 import torch.nn.functional as F
 
-from TTS.tts.layers.delightful_tts.conformer import ConformerMultiHeadedSelfAttention
-from TTS.tts.layers.delightful_tts.conv_layers import CoordConv1d
-from TTS.tts.layers.delightful_tts.networks import STL
+from TTS.TTS.tts.layers.delightful_tts.conformer import ConformerMultiHeadedSelfAttention
+from TTS.TTS.tts.layers.delightful_tts.conv_layers import CoordConv1d
+from TTS.TTS.tts.layers.delightful_tts.networks import STL
 
 
 def get_mask_from_lengths(lengths: torch.Tensor) -> torch.Tensor:

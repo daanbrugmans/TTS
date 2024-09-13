@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
 
 
 @dataclass
@@ -10,7 +10,7 @@ class GlowTTSConfig(BaseTTSConfig):
 
     Example:
 
-        >>> from TTS.tts.configs.glow_tts_config import GlowTTSConfig
+        >>> from TTS.TTS.tts.configs.glow_tts_config import GlowTTSConfig
         >>> config = GlowTTSConfig()
 
     Args:

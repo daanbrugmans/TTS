@@ -2,10 +2,10 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config.shared_configs import BaseDatasetConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.layers.xtts.trainer.gpt_trainer import GPTArgs, GPTTrainer, GPTTrainerConfig, XttsAudioConfig
-from TTS.utils.manage import ModelManager
+from TTS.TTS.config.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.layers.xtts.trainer.gpt_trainer import GPTArgs, GPTTrainer, GPTTrainerConfig, XttsAudioConfig
+from TTS.TTS.utils.manage import ModelManager
 
 # Logging parameters
 RUN_NAME = "GPT_XTTS_v2.0_LJSpeech_FT"

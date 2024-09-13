@@ -9,14 +9,14 @@ import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from TTS.config import load_config
-from TTS.tts.datasets import TTSDataset, load_tts_samples
-from TTS.tts.models import setup_model
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio import AudioProcessor
-from TTS.utils.audio.numpy_transforms import quantize
-from TTS.utils.generic_utils import count_parameters
+from TTS.TTS.config import load_config
+from TTS.TTS.tts.datasets import TTSDataset, load_tts_samples
+from TTS.TTS.tts.models import setup_model
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.utils.audio.numpy_transforms import quantize
+from TTS.TTS.utils.generic_utils import count_parameters
 
 use_cuda = torch.cuda.is_available()
 

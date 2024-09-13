@@ -3,13 +3,13 @@ import os
 import torch
 from trainer import Trainer, TrainerArgs
 
-from TTS.bin.compute_embeddings import compute_embeddings
-from TTS.bin.resample import resample_files
-from TTS.config.shared_configs import BaseDatasetConfig
-from TTS.tts.configs.vits_config import VitsConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models.vits import CharactersConfig, Vits, VitsArgs, VitsAudioConfig
-from TTS.utils.downloaders import download_vctk
+from TTS.TTS.bin.compute_embeddings import compute_embeddings
+from TTS.TTS.bin.resample import resample_files
+from TTS.TTS.config.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.configs.vits_config import VitsConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models.vits import CharactersConfig, Vits, VitsArgs, VitsAudioConfig
+from TTS.TTS.utils.downloaders import download_vctk
 
 torch.set_num_threads(24)
 

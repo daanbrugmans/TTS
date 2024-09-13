@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn  # pylint: disable=consider-using-from-import
 
-from TTS.tts.layers.delightful_tts.conv_layers import ConvTransposed
+from TTS.TTS.tts.layers.delightful_tts.conv_layers import ConvTransposed
 
 
 class PhonemeProsodyPredictor(nn.Module):

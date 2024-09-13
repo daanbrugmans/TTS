@@ -6,8 +6,8 @@ import numpy as np
 import scipy.io.wavfile
 import scipy.signal
 
-from TTS.tts.utils.helpers import StandardScaler
-from TTS.utils.audio.numpy_transforms import (
+from TTS.TTS.tts.utils.helpers import StandardScaler
+from TTS.TTS.utils.audio.numpy_transforms import (
     amp_to_db,
     build_mel_basis,
     compute_f0,
@@ -494,8 +494,8 @@ class AudioProcessor(object):
 
         Examples:
             >>> WAV_FILE = filename = librosa.example('vibeace')
-            >>> from TTS.config import BaseAudioConfig
-            >>> from TTS.utils.audio import AudioProcessor
+            >>> from TTS.TTS.config import BaseAudioConfig
+            >>> from TTS.TTS.utils.audio import AudioProcessor
             >>> conf = BaseAudioConfig(pitch_fmax=640, pitch_fmin=1)
             >>> ap = AudioProcessor(**conf)
             >>> wav = ap.load_wav(WAV_FILE, sr=ap.sample_rate)[:5 * ap.sample_rate]

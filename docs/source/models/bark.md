@@ -15,8 +15,8 @@ It is architecturally very similar to Google's [AudioLM](https://arxiv.org/abs/2
 ```python
 text = "Hello, my name is Manmay , how are you?"
 
-from TTS.tts.configs.bark_config import BarkConfig
-from TTS.tts.models.bark import Bark
+from TTS.TTS.tts.configs.bark_config import BarkConfig
+from TTS.TTS.tts.models.bark import Bark
 
 config = BarkConfig()
 model = Bark.init_from_config(config)
@@ -33,7 +33,7 @@ output_dict = model.synthesize(text, config, speaker_id="ljspeech", voice_dirs="
 Using 🐸TTS API:
 
 ```python
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 
 # Load the model to GPU
 # Bark is really slow on CPU, so we recommend using GPU.

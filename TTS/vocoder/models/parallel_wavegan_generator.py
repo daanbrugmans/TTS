@@ -4,9 +4,9 @@ import numpy as np
 import torch
 from torch.nn.utils.parametrize import remove_parametrizations
 
-from TTS.utils.io import load_fsspec
-from TTS.vocoder.layers.parallel_wavegan import ResidualBlock
-from TTS.vocoder.layers.upsample import ConvUpsample
+from TTS.TTS.utils.io import load_fsspec
+from TTS.TTS.vocoder.layers.parallel_wavegan import ResidualBlock
+from TTS.TTS.vocoder.layers.upsample import ConvUpsample
 
 
 class ParallelWaveganGenerator(torch.nn.Module):

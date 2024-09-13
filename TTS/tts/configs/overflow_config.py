@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
 
 
 @dataclass
@@ -11,7 +11,7 @@ class OverflowConfig(BaseTTSConfig):  # The classname has to be camel case
 
     Example:
 
-        >>> from TTS.tts.configs.overflow_config import OverflowConfig
+        >>> from TTS.TTS.tts.configs.overflow_config import OverflowConfig
         >>> config = OverflowConfig()
 
     Args:

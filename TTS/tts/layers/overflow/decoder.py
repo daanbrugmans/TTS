@@ -1,8 +1,8 @@
 import torch
 from torch import nn
 
-from TTS.tts.layers.glow_tts.decoder import Decoder as GlowDecoder
-from TTS.tts.utils.helpers import sequence_mask
+from TTS.TTS.tts.layers.glow_tts.decoder import Decoder as GlowDecoder
+from TTS.TTS.tts.utils.helpers import sequence_mask
 
 
 class Decoder(nn.Module):

@@ -2,8 +2,8 @@ import unittest
 
 import torch as T
 
-from TTS.tts.layers.losses import BCELossMasked, L1LossMasked, MSELossMasked, SSIMLoss
-from TTS.tts.utils.helpers import sequence_mask
+from TTS.TTS.tts.layers.losses import BCELossMasked, L1LossMasked, MSELossMasked, SSIMLoss
+from TTS.TTS.tts.utils.helpers import sequence_mask
 
 
 class L1LossMaskedTests(unittest.TestCase):

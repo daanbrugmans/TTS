@@ -106,7 +106,7 @@ Splits the text into sentences and generates audio for each sentence. The audio 
 You can optionally disable sentence splitting for better coherence but more VRAM and possibly hitting models context length limit.
 
 ```python
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2", gpu=True)
 
 # generate speech by cloning a voice using default settings
@@ -123,7 +123,7 @@ tts.tts_to_file(text="It took me quite a long time to develop a voice, and now t
 You can pass multiple audio files to the `speaker_wav` argument for better voice cloning.
 
 ```python
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 
 # using the default version set in 🐸TTS
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2", gpu=True)
@@ -148,7 +148,7 @@ tts.tts_to_file(text="It took me quite a long time to develop a voice, and now t
 You can do inference using one of the available speakers using the following code:
 
 ```python
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2", gpu=True)
 
 # generate speech by cloning a voice using default settings
@@ -195,8 +195,8 @@ pip install deepspeed==0.10.3
 import os
 import torch
 import torchaudio
-from TTS.tts.configs.xtts_config import XttsConfig
-from TTS.tts.models.xtts import Xtts
+from TTS.TTS.tts.configs.xtts_config import XttsConfig
+from TTS.TTS.tts.models.xtts import Xtts
 
 print("Loading model...")
 config = XttsConfig()
@@ -231,8 +231,8 @@ import os
 import time
 import torch
 import torchaudio
-from TTS.tts.configs.xtts_config import XttsConfig
-from TTS.tts.models.xtts import Xtts
+from TTS.TTS.tts.configs.xtts_config import XttsConfig
+from TTS.TTS.tts.models.xtts import Xtts
 
 print("Loading model...")
 config = XttsConfig()
@@ -320,8 +320,8 @@ After training you can do inference following the code bellow.
 import os
 import torch
 import torchaudio
-from TTS.tts.configs.xtts_config import XttsConfig
-from TTS.tts.models.xtts import Xtts
+from TTS.TTS.tts.configs.xtts_config import XttsConfig
+from TTS.TTS.tts.models.xtts import Xtts
 
 # Add here the xtts_config path
 CONFIG_PATH = "recipes/ljspeech/xtts_v1/run/training/GPT_XTTS_LJSpeech_FT-October-23-2023_10+36AM-653f2e75/config.json"

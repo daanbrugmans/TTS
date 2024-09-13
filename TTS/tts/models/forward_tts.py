@@ -6,17 +6,17 @@ from coqpit import Coqpit
 from torch import nn
 from torch.cuda.amp.autocast_mode import autocast
 
-from TTS.tts.layers.feed_forward.decoder import Decoder
-from TTS.tts.layers.feed_forward.encoder import Encoder
-from TTS.tts.layers.generic.aligner import AlignmentNetwork
-from TTS.tts.layers.generic.pos_encoding import PositionalEncoding
-from TTS.tts.layers.glow_tts.duration_predictor import DurationPredictor
-from TTS.tts.models.base_tts import BaseTTS
-from TTS.tts.utils.helpers import average_over_durations, generate_path, maximum_path, sequence_mask
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.tts.utils.visual import plot_alignment, plot_avg_energy, plot_avg_pitch, plot_spectrogram
-from TTS.utils.io import load_fsspec
+from TTS.TTS.tts.layers.feed_forward.decoder import Decoder
+from TTS.TTS.tts.layers.feed_forward.encoder import Encoder
+from TTS.TTS.tts.layers.generic.aligner import AlignmentNetwork
+from TTS.TTS.tts.layers.generic.pos_encoding import PositionalEncoding
+from TTS.TTS.tts.layers.glow_tts.duration_predictor import DurationPredictor
+from TTS.TTS.tts.models.base_tts import BaseTTS
+from TTS.TTS.tts.utils.helpers import average_over_durations, generate_path, maximum_path, sequence_mask
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.tts.utils.visual import plot_alignment, plot_avg_energy, plot_avg_pitch, plot_spectrogram
+from TTS.TTS.utils.io import load_fsspec
 
 
 @dataclass
@@ -192,7 +192,7 @@ class ForwardTTS(BaseTTS):
             Defaults to None.
 
     Examples:
-        >>> from TTS.tts.models.fast_pitch import ForwardTTS, ForwardTTSArgs
+        >>> from TTS.TTS.tts.models.fast_pitch import ForwardTTS, ForwardTTSArgs
         >>> config = ForwardTTSArgs()
         >>> model = ForwardTTS(config)
     """
@@ -837,7 +837,7 @@ class ForwardTTS(BaseTTS):
             assert not self.training
 
     def get_criterion(self):
-        from TTS.tts.layers.losses import ForwardTTSLoss  # pylint: disable=import-outside-toplevel
+        from TTS.TTS.tts.layers.losses import ForwardTTSLoss  # pylint: disable=import-outside-toplevel
 
         return ForwardTTSLoss(self.config)
 
@@ -854,7 +854,7 @@ class ForwardTTS(BaseTTS):
             samples (Union[List[List], List[Dict]]): Training samples to parse speaker ids for training.
                 Defaults to None.
         """
-        from TTS.utils.audio import AudioProcessor
+        from TTS.TTS.utils.audio import AudioProcessor
 
         ap = AudioProcessor.init_from_config(config)
         tokenizer, new_config = TTSTokenizer.init_from_config(config)

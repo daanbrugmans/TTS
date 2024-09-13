@@ -6,8 +6,8 @@ import shutil
 from trainer import get_last_checkpoint
 
 from tests import get_device_id, get_tests_output_path, run_cli
-from TTS.config.shared_configs import BaseDatasetConfig
-from TTS.tts.configs.vits_config import VitsConfig
+from TTS.TTS.config.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.configs.vits_config import VitsConfig
 
 config_path = os.path.join(get_tests_output_path(), "test_model_config.json")
 output_path = os.path.join(get_tests_output_path(), "train_outputs")

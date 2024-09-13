@@ -2,14 +2,14 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config.shared_configs import BaseAudioConfig
-from TTS.tts.configs.glow_tts_config import GlowTTSConfig
-from TTS.tts.configs.shared_configs import BaseDatasetConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models.glow_tts import GlowTTS
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio import AudioProcessor
+from TTS.TTS.config.shared_configs import BaseAudioConfig
+from TTS.TTS.tts.configs.glow_tts_config import GlowTTSConfig
+from TTS.TTS.tts.configs.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models.glow_tts import GlowTTS
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio import AudioProcessor
 
 # set experiment paths
 output_path = os.path.dirname(os.path.abspath(__file__))
@@ -17,7 +17,7 @@ dataset_path = os.path.join(output_path, "../VCTK/")
 
 # download the dataset if not downloaded
 if not os.path.exists(dataset_path):
-    from TTS.utils.downloaders import download_vctk
+    from TTS.TTS.utils.downloaders import download_vctk
 
     download_vctk(dataset_path)
 

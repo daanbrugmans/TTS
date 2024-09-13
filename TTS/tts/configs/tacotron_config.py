@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig, CapacitronVAEConfig, GSTConfig
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig, CapacitronVAEConfig, GSTConfig
 
 
 @dataclass
@@ -10,7 +10,7 @@ class TacotronConfig(BaseTTSConfig):
 
     Example:
 
-        >>> from TTS.tts.configs.tacotron_config import TacotronConfig
+        >>> from TTS.TTS.tts.configs.tacotron_config import TacotronConfig
         >>> config = TacotronConfig()
 
     Args:

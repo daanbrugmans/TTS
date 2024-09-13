@@ -3,8 +3,8 @@ dependencies = [
 ]
 import torch
 
-from TTS.utils.manage import ModelManager
-from TTS.utils.synthesizer import Synthesizer
+from TTS.TTS.utils.manage import ModelManager
+from TTS.TTS.utils.synthesizer import Synthesizer
 
 
 def tts(model_name='tts_models/en/ljspeech/tacotron2-DCA',

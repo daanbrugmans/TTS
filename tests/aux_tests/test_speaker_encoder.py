@@ -3,9 +3,9 @@ import unittest
 import torch as T
 
 from tests import get_tests_input_path
-from TTS.encoder.losses import AngleProtoLoss, GE2ELoss, SoftmaxAngleProtoLoss
-from TTS.encoder.models.lstm import LSTMSpeakerEncoder
-from TTS.encoder.models.resnet import ResNetSpeakerEncoder
+from TTS.TTS.encoder.losses import AngleProtoLoss, GE2ELoss, SoftmaxAngleProtoLoss
+from TTS.TTS.encoder.models.lstm import LSTMSpeakerEncoder
+from TTS.TTS.encoder.models.resnet import ResNetSpeakerEncoder
 
 file_path = get_tests_input_path()
 

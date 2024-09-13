@@ -5,8 +5,8 @@ import torch.nn.functional as F
 from torch import nn
 from tqdm.auto import tqdm
 
-from TTS.tts.layers.tacotron.common_layers import Linear
-from TTS.tts.layers.tacotron.tacotron2 import ConvBNBlock
+from TTS.TTS.tts.layers.tacotron.common_layers import Linear
+from TTS.TTS.tts.layers.tacotron.tacotron2 import ConvBNBlock
 
 
 class Encoder(nn.Module):

@@ -2,8 +2,8 @@
 import argparse
 from argparse import RawTextHelpFormatter
 
-from TTS.config import load_config
-from TTS.tts.datasets import load_tts_samples
+from TTS.TTS.config import load_config
+from TTS.TTS.tts.datasets import load_tts_samples
 
 
 def main():

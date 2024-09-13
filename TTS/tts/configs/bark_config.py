@@ -2,11 +2,11 @@ import os
 from dataclasses import dataclass, field
 from typing import Dict
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
-from TTS.tts.layers.bark.model import GPTConfig
-from TTS.tts.layers.bark.model_fine import FineGPTConfig
-from TTS.tts.models.bark import BarkAudioConfig
-from TTS.utils.generic_utils import get_user_data_dir
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.layers.bark.model import GPTConfig
+from TTS.TTS.tts.layers.bark.model_fine import FineGPTConfig
+from TTS.TTS.tts.models.bark import BarkAudioConfig
+from TTS.TTS.utils.generic_utils import get_user_data_dir
 
 
 @dataclass

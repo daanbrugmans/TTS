@@ -7,10 +7,10 @@ import torch
 from torch.utils.data import DataLoader
 
 from tests import get_tests_data_path, get_tests_output_path
-from TTS.tts.configs.shared_configs import BaseDatasetConfig, BaseTTSConfig
-from TTS.tts.datasets import TTSDataset, load_tts_samples
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio import AudioProcessor
+from TTS.TTS.tts.configs.shared_configs import BaseDatasetConfig, BaseTTSConfig
+from TTS.TTS.tts.datasets import TTSDataset, load_tts_samples
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio import AudioProcessor
 
 # pylint: disable=unused-variable
 

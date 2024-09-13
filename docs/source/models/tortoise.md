@@ -8,8 +8,8 @@ Big thanks to 👑[@manmay-nakhashi](https://github.com/manmay-nakhashi) who hel
 Example use:
 
 ```python
-from TTS.tts.configs.tortoise_config import TortoiseConfig
-from TTS.tts.models.tortoise import Tortoise
+from TTS.TTS.tts.configs.tortoise_config import TortoiseConfig
+from TTS.TTS.tts.models.tortoise import Tortoise
 
 config = TortoiseConfig()
 model = Tortoise.init_from_config(config)
@@ -25,7 +25,7 @@ output_dict = model.synthesize(text, config, speaker_id="speaker_n", extra_voice
 Using 🐸TTS API:
 
 ```python
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 tts = TTS("tts_models/en/multi-dataset/tortoise-v2")
 
 # cloning `lj` voice from `TTS/tts/utils/assets/tortoise/voices/lj`

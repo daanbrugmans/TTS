@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
-from TTS.tts.models.tortoise import TortoiseArgs, TortoiseAudioConfig
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.models.tortoise import TortoiseArgs, TortoiseAudioConfig
 
 
 @dataclass
@@ -63,7 +63,7 @@ class TortoiseConfig(BaseTTSConfig):
 
     Example:
 
-        >>> from TTS.tts.configs.tortoise_config import TortoiseConfig
+        >>> from TTS.TTS.tts.configs.tortoise_config import TortoiseConfig
         >>> config = TortoiseConfig()
     """
 

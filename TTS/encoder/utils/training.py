@@ -7,9 +7,9 @@ from trainer.io import copy_model_files
 from trainer.logging import logger_factory
 from trainer.logging.console_logger import ConsoleLogger
 
-from TTS.config import load_config, register_config
-from TTS.tts.utils.text.characters import parse_symbols
-from TTS.utils.generic_utils import get_experiment_folder_path, get_git_branch
+from TTS.TTS.config import load_config, register_config
+from TTS.TTS.tts.utils.text.characters import parse_symbols
+from TTS.TTS.utils.generic_utils import get_experiment_folder_path, get_git_branch
 
 
 @dataclass
@@ -54,7 +54,7 @@ def process_args(args, config=None):
             config = load_config(args.config_path)
         else:
             # init from console args
-            from TTS.config.shared_configs import BaseTrainingConfig  # pylint: disable=import-outside-toplevel
+            from TTS.TTS.config.shared_configs import BaseTrainingConfig  # pylint: disable=import-outside-toplevel
 
             config_base = BaseTrainingConfig()
             config_base.parse_known_args(coqpit_overrides)

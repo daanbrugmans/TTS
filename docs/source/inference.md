@@ -11,7 +11,7 @@ After the installation, 2 terminal commands are available.
 
 1. TTS Command Line Interface (CLI). - `tts`
 2. Local Demo Server. - `tts-server`
-3. In 🐍Python. - `from TTS.api import TTS`
+3. In 🐍Python. - `from TTS.TTS.api import TTS`
 
 ## On the Commandline - `tts`
 ![cli.gif](https://github.com/coqui-ai/TTS/raw/main/images/tts_cli.gif)
@@ -115,7 +115,7 @@ You can run a multi-speaker and multi-lingual model in Python as
 
 ```python
 import torch
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 
 # Get device
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -178,7 +178,7 @@ For these models use the following name format: `tts_models/<lang-iso_code>/fair
 You can find the list of language ISO codes [here](https://dl.fbaipublicfiles.com/mms/tts/all-tts-languages.html) and learn about the Fairseq models [here](https://github.com/facebookresearch/fairseq/tree/main/examples/mms).
 
 ```python
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 api = TTS(model_name="tts_models/eng/fairseq/vits").to("cuda")
 api.tts_to_file("This is a test.", file_path="output.wav")
 

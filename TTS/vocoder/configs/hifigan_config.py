@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
+from TTS.TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
 
 
 @dataclass
@@ -9,7 +9,7 @@ class HifiganConfig(BaseGANVocoderConfig):
 
     Example:
 
-        >>> from TTS.vocoder.configs import HifiganConfig
+        >>> from TTS.TTS.vocoder.configs import HifiganConfig
         >>> config = HifiganConfig()
 
     Args:
@@ -17,7 +17,7 @@ class HifiganConfig(BaseGANVocoderConfig):
             Model name used for selecting the right model at initialization. Defaults to `hifigan`.
         discriminator_model (str): One of the discriminators from `TTS.vocoder.models.*_discriminator`. Defaults to
             'hifigan_discriminator`.
-        generator_model (str): One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+        generator_model (str): One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `hifigan_generator`.
         generator_model_params (dict): Parameters of the generator model. Defaults to
             `

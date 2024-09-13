@@ -2,8 +2,8 @@ import os
 import unittest
 
 from tests import get_tests_input_path, get_tests_output_path, get_tests_path
-from TTS.config import BaseAudioConfig
-from TTS.utils.audio.processor import AudioProcessor
+from TTS.TTS.config import BaseAudioConfig
+from TTS.TTS.utils.audio.processor import AudioProcessor
 
 TESTS_PATH = get_tests_path()
 OUT_PATH = os.path.join(get_tests_output_path(), "audio_tests")

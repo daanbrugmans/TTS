@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
+from TTS.TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
 
 
 @dataclass
@@ -9,7 +9,7 @@ class MelganConfig(BaseGANVocoderConfig):
 
     Example:
 
-        >>> from TTS.vocoder.configs import MelganConfig
+        >>> from TTS.TTS.vocoder.configs import MelganConfig
         >>> config = MelganConfig()
 
     Args:
@@ -19,7 +19,7 @@ class MelganConfig(BaseGANVocoderConfig):
             'melgan_multiscale_discriminator`.
         discriminator_model_params (dict): The discriminator model parameters. Defaults to
             '{"base_channels": 16, "max_channels": 1024, "downsample_factors": [4, 4, 4, 4]}`
-        generator_model (str): One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+        generator_model (str): One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `melgan_generator`.
         batch_size (int):
             Batch size used at training. Larger values use more memory. Defaults to 16.

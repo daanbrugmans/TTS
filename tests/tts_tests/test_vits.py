@@ -6,10 +6,10 @@ import torch
 from trainer.logging.tensorboard_logger import TensorboardLogger
 
 from tests import assertHasAttr, assertHasNotAttr, get_tests_data_path, get_tests_input_path, get_tests_output_path
-from TTS.config import load_config
-from TTS.encoder.utils.generic_utils import setup_encoder_model
-from TTS.tts.configs.vits_config import VitsConfig
-from TTS.tts.models.vits import (
+from TTS.TTS.config import load_config
+from TTS.TTS.encoder.utils.generic_utils import setup_encoder_model
+from TTS.TTS.tts.configs.vits_config import VitsConfig
+from TTS.TTS.tts.models.vits import (
     Vits,
     VitsArgs,
     VitsAudioConfig,
@@ -20,7 +20,7 @@ from TTS.tts.models.vits import (
     wav_to_mel,
     wav_to_spec,
 )
-from TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.speakers import SpeakerManager
 
 LANG_FILE = os.path.join(get_tests_input_path(), "language_ids.json")
 SPEAKER_ENCODER_CONFIG = os.path.join(get_tests_input_path(), "test_speaker_encoder_config.json")

@@ -1,1 +1,1 @@
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer

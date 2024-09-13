@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
-from TTS.tts.models.forward_tts import ForwardTTSArgs
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.models.forward_tts import ForwardTTSArgs
 
 
 @dataclass
@@ -11,7 +11,7 @@ class SpeedySpeechConfig(BaseTTSConfig):
 
     Example:
 
-        >>> from TTS.tts.configs.speedy_speech_config import SpeedySpeechConfig
+        >>> from TTS.TTS.tts.configs.speedy_speech_config import SpeedySpeechConfig
         >>> config = SpeedySpeechConfig()
 
      Args:

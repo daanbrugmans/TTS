@@ -1,7 +1,7 @@
 from dataclasses import replace
 from typing import Dict
 
-from TTS.tts.configs.shared_configs import CharactersConfig
+from TTS.TTS.tts.configs.shared_configs import CharactersConfig
 
 
 def parse_symbols():

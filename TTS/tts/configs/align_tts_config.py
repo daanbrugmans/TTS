@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
 
-from TTS.tts.configs.shared_configs import BaseTTSConfig
-from TTS.tts.models.align_tts import AlignTTSArgs
+from TTS.TTS.tts.configs.shared_configs import BaseTTSConfig
+from TTS.TTS.tts.models.align_tts import AlignTTSArgs
 
 
 @dataclass
@@ -10,7 +10,7 @@ class AlignTTSConfig(BaseTTSConfig):
     """Defines parameters for AlignTTS model.
     Example:
 
-        >>> from TTS.tts.configs.align_tts_config import AlignTTSConfig
+        >>> from TTS.TTS.tts.configs.align_tts_config import AlignTTSConfig
         >>> config = AlignTTSConfig()
 
     Args:

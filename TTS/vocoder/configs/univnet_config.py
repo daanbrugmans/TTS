@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import Dict
 
-from TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
+from TTS.TTS.vocoder.configs.shared_configs import BaseGANVocoderConfig
 
 
 @dataclass
@@ -10,7 +10,7 @@ class UnivnetConfig(BaseGANVocoderConfig):
 
     Example:
 
-        >>> from TTS.vocoder.configs import UnivNetConfig
+        >>> from TTS.TTS.vocoder.configs import UnivNetConfig
         >>> config = UnivNetConfig()
 
     Args:
@@ -18,7 +18,7 @@ class UnivnetConfig(BaseGANVocoderConfig):
             Model name used for selecting the right model at initialization. Defaults to `UnivNet`.
         discriminator_model (str): One of the discriminators from `TTS.vocoder.models.*_discriminator`. Defaults to
             'UnivNet_discriminator`.
-        generator_model (str): One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+        generator_model (str): One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `UnivNet_generator`.
         generator_model_params (dict): Parameters of the generator model. Defaults to
             `

@@ -7,16 +7,16 @@ from torch import nn
 from torch.cuda.amp.autocast_mode import autocast
 from torch.nn import functional as F
 
-from TTS.tts.configs.glow_tts_config import GlowTTSConfig
-from TTS.tts.layers.glow_tts.decoder import Decoder
-from TTS.tts.layers.glow_tts.encoder import Encoder
-from TTS.tts.models.base_tts import BaseTTS
-from TTS.tts.utils.helpers import generate_path, maximum_path, sequence_mask
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.synthesis import synthesis
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.tts.utils.visual import plot_alignment, plot_spectrogram
-from TTS.utils.io import load_fsspec
+from TTS.TTS.tts.configs.glow_tts_config import GlowTTSConfig
+from TTS.TTS.tts.layers.glow_tts.decoder import Decoder
+from TTS.TTS.tts.layers.glow_tts.encoder import Encoder
+from TTS.TTS.tts.models.base_tts import BaseTTS
+from TTS.TTS.tts.utils.helpers import generate_path, maximum_path, sequence_mask
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.synthesis import synthesis
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.tts.utils.visual import plot_alignment, plot_spectrogram
+from TTS.TTS.utils.io import load_fsspec
 
 
 class GlowTTS(BaseTTS):
@@ -42,16 +42,16 @@ class GlowTTS(BaseTTS):
     Examples:
         Init only model layers.
 
-        >>> from TTS.tts.configs.glow_tts_config import GlowTTSConfig
-        >>> from TTS.tts.models.glow_tts import GlowTTS
+        >>> from TTS.TTS.tts.configs.glow_tts_config import GlowTTSConfig
+        >>> from TTS.TTS.tts.models.glow_tts import GlowTTS
         >>> config = GlowTTSConfig(num_chars=2)
         >>> model = GlowTTS(config)
 
         Fully init a model ready for action. All the class attributes and class members
         (e.g Tokenizer, AudioProcessor, etc.). are initialized internally based on config values.
 
-        >>> from TTS.tts.configs.glow_tts_config import GlowTTSConfig
-        >>> from TTS.tts.models.glow_tts import GlowTTS
+        >>> from TTS.TTS.tts.configs.glow_tts_config import GlowTTSConfig
+        >>> from TTS.TTS.tts.models.glow_tts import GlowTTS
         >>> config = GlowTTSConfig()
         >>> model = GlowTTS.init_from_config(config, verbose=False)
     """
@@ -531,7 +531,7 @@ class GlowTTS(BaseTTS):
 
     @staticmethod
     def get_criterion():
-        from TTS.tts.layers.losses import GlowTTSLoss  # pylint: disable=import-outside-toplevel
+        from TTS.TTS.tts.layers.losses import GlowTTSLoss  # pylint: disable=import-outside-toplevel
 
         return GlowTTSLoss()
 
@@ -549,7 +549,7 @@ class GlowTTS(BaseTTS):
                 Defaults to None.
             verbose (bool): If True, print init messages. Defaults to True.
         """
-        from TTS.utils.audio import AudioProcessor
+        from TTS.TTS.utils.audio import AudioProcessor
 
         ap = AudioProcessor.init_from_config(config, verbose)
         tokenizer, new_config = TTSTokenizer.init_from_config(config)

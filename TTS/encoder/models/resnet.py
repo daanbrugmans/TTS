@@ -1,8 +1,8 @@
 import torch
 from torch import nn
 
-# from TTS.utils.audio.torch_transforms import TorchSTFT
-from TTS.encoder.models.base_encoder import BaseEncoder
+# from TTS.TTS.utils.audio.torch_transforms import TorchSTFT
+from TTS.TTS.encoder.models.base_encoder import BaseEncoder
 
 
 class SELayer(nn.Module):

@@ -5,11 +5,11 @@ from argparse import RawTextHelpFormatter
 import torch
 from tqdm import tqdm
 
-from TTS.config import load_config
-from TTS.config.shared_configs import BaseDatasetConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.utils.managers import save_file
-from TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.config import load_config
+from TTS.TTS.config.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.utils.managers import save_file
+from TTS.TTS.tts.utils.speakers import SpeakerManager
 
 
 def compute_embeddings(

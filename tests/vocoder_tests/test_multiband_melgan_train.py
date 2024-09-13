@@ -3,7 +3,7 @@ import os
 import shutil
 
 from tests import get_device_id, get_tests_output_path, run_cli
-from TTS.vocoder.configs import MultibandMelganConfig
+from TTS.TTS.vocoder.configs import MultibandMelganConfig
 
 config_path = os.path.join(get_tests_output_path(), "test_vocoder_config.json")
 output_path = os.path.join(get_tests_output_path(), "train_outputs")

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from TTS.tts.configs.tacotron_config import TacotronConfig
+from TTS.TTS.tts.configs.tacotron_config import TacotronConfig
 
 
 @dataclass
@@ -9,7 +9,7 @@ class Tacotron2Config(TacotronConfig):
 
     Example:
 
-        >>> from TTS.tts.configs.tacotron2_config import Tacotron2Config
+        >>> from TTS.TTS.tts.configs.tacotron2_config import Tacotron2Config
         >>> config = Tacotron2Config()
 
     Check `TacotronConfig` for argument descriptions.

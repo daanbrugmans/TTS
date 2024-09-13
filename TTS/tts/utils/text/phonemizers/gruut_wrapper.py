@@ -4,8 +4,8 @@ from typing import List
 import gruut
 from gruut_ipa import IPA
 
-from TTS.tts.utils.text.phonemizers.base import BasePhonemizer
-from TTS.tts.utils.text.punctuation import Punctuation
+from TTS.TTS.tts.utils.text.phonemizers.base import BasePhonemizer
+from TTS.TTS.tts.utils.text.punctuation import Punctuation
 
 # Table for str.translate to fix gruut/TTS phoneme mismatch
 GRUUT_TRANS_TABLE = str.maketrans("g", "ɡ")
@@ -32,7 +32,7 @@ class Gruut(BasePhonemizer):
 
     Example:
 
-        >>> from TTS.tts.utils.text.phonemizers.gruut_wrapper import Gruut
+        >>> from TTS.TTS.tts.utils.text.phonemizers.gruut_wrapper import Gruut
         >>> phonemizer = Gruut('en-us')
         >>> phonemizer.phonemize("Be a voice, not an! echo?", separator="|")
         'b|i| ə| v|ɔ|ɪ|s, n|ɑ|t| ə|n! ɛ|k|o|ʊ?'

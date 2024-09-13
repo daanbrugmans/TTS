@@ -4,8 +4,8 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from TTS.utils.audio.torch_transforms import TorchSTFT
-from TTS.vocoder.utils.distribution import discretized_mix_logistic_loss, gaussian_loss
+from TTS.TTS.utils.audio.torch_transforms import TorchSTFT
+from TTS.TTS.vocoder.utils.distribution import discretized_mix_logistic_loss, gaussian_loss
 
 #################################
 # GENERATOR LOSSES

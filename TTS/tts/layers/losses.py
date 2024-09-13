@@ -6,9 +6,9 @@ from coqpit import Coqpit
 from torch import nn
 from torch.nn import functional
 
-from TTS.tts.utils.helpers import sequence_mask
-from TTS.tts.utils.ssim import SSIMLoss as _SSIMLoss
-from TTS.utils.audio.torch_transforms import TorchSTFT
+from TTS.TTS.tts.utils.helpers import sequence_mask
+from TTS.TTS.tts.utils.ssim import SSIMLoss as _SSIMLoss
+from TTS.TTS.utils.audio.torch_transforms import TorchSTFT
 
 
 # pylint: disable=abstract-method

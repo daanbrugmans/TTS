@@ -18,23 +18,23 @@ from torch.utils.data.sampler import WeightedRandomSampler
 from trainer.torch import DistributedSampler, DistributedSamplerWrapper
 from trainer.trainer_utils import get_optimizer, get_scheduler
 
-from TTS.tts.datasets.dataset import F0Dataset, TTSDataset, _parse_sample
-from TTS.tts.layers.delightful_tts.acoustic_model import AcousticModel
-from TTS.tts.layers.losses import ForwardSumLoss, VitsDiscriminatorLoss
-from TTS.tts.layers.vits.discriminator import VitsDiscriminator
-from TTS.tts.models.base_tts import BaseTTSE2E
-from TTS.tts.utils.helpers import average_over_durations, compute_attn_prior, rand_segments, segment, sequence_mask
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.tts.utils.visual import plot_alignment, plot_avg_pitch, plot_pitch, plot_spectrogram
-from TTS.utils.audio.numpy_transforms import build_mel_basis, compute_f0
-from TTS.utils.audio.numpy_transforms import db_to_amp as db_to_amp_numpy
-from TTS.utils.audio.numpy_transforms import mel_to_wav as mel_to_wav_numpy
-from TTS.utils.audio.processor import AudioProcessor
-from TTS.utils.io import load_fsspec
-from TTS.vocoder.layers.losses import MultiScaleSTFTLoss
-from TTS.vocoder.models.hifigan_generator import HifiganGenerator
-from TTS.vocoder.utils.generic_utils import plot_results
+from TTS.TTS.tts.datasets.dataset import F0Dataset, TTSDataset, _parse_sample
+from TTS.TTS.tts.layers.delightful_tts.acoustic_model import AcousticModel
+from TTS.TTS.tts.layers.losses import ForwardSumLoss, VitsDiscriminatorLoss
+from TTS.TTS.tts.layers.vits.discriminator import VitsDiscriminator
+from TTS.TTS.tts.models.base_tts import BaseTTSE2E
+from TTS.TTS.tts.utils.helpers import average_over_durations, compute_attn_prior, rand_segments, segment, sequence_mask
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.tts.utils.visual import plot_alignment, plot_avg_pitch, plot_pitch, plot_spectrogram
+from TTS.TTS.utils.audio.numpy_transforms import build_mel_basis, compute_f0
+from TTS.TTS.utils.audio.numpy_transforms import db_to_amp as db_to_amp_numpy
+from TTS.TTS.utils.audio.numpy_transforms import mel_to_wav as mel_to_wav_numpy
+from TTS.TTS.utils.audio.processor import AudioProcessor
+from TTS.TTS.utils.io import load_fsspec
+from TTS.TTS.vocoder.layers.losses import MultiScaleSTFTLoss
+from TTS.TTS.vocoder.models.hifigan_generator import HifiganGenerator
+from TTS.TTS.vocoder.utils.generic_utils import plot_results
 
 
 def id_to_torch(aux_id, cuda=False):
@@ -652,7 +652,7 @@ class DelightfulTTS(BaseTTSE2E):
         spec --------^
 
     Examples:
-        >>> from TTS.tts.models.forward_tts_e2e import ForwardTTSE2e, ForwardTTSE2eConfig
+        >>> from TTS.TTS.tts.models.forward_tts_e2e import ForwardTTSE2e, ForwardTTSE2eConfig
         >>> config = ForwardTTSE2eConfig()
         >>> model = ForwardTTSE2e(config)
     """

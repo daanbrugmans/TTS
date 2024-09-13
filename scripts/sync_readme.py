@@ -17,7 +17,7 @@ def sync_readme():
     args = ap.parse_args()
     readme_path = Path(__file__).parent.parent / "README.md"
     orig_content = readme_path.read_text()
-    from TTS.bin.synthesize import description
+    from TTS.TTS.bin.synthesize import description
 
     new_content = replace_between_markers(orig_content, "tts-readme", description.strip())
     if args.check:

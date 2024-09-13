@@ -7,15 +7,15 @@ from torch import nn
 from torch.cuda.amp.autocast_mode import autocast
 from trainer.trainer_utils import get_optimizer, get_scheduler
 
-from TTS.tts.layers.tacotron.capacitron_layers import CapacitronVAE
-from TTS.tts.layers.tacotron.gst_layers import GST
-from TTS.tts.layers.tacotron.tacotron import Decoder, Encoder, PostCBHG
-from TTS.tts.models.base_tacotron import BaseTacotron
-from TTS.tts.utils.measures import alignment_diagonal_score
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.tts.utils.visual import plot_alignment, plot_spectrogram
-from TTS.utils.capacitron_optimizer import CapacitronOptimizer
+from TTS.TTS.tts.layers.tacotron.capacitron_layers import CapacitronVAE
+from TTS.TTS.tts.layers.tacotron.gst_layers import GST
+from TTS.TTS.tts.layers.tacotron.tacotron import Decoder, Encoder, PostCBHG
+from TTS.TTS.tts.models.base_tacotron import BaseTacotron
+from TTS.TTS.tts.utils.measures import alignment_diagonal_score
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.tts.utils.visual import plot_alignment, plot_spectrogram
+from TTS.TTS.utils.capacitron_optimizer import CapacitronOptimizer
 
 
 class Tacotron(BaseTacotron):
@@ -401,7 +401,7 @@ class Tacotron(BaseTacotron):
             samples (Union[List[List], List[Dict]]): Training samples to parse speaker ids for training.
                 Defaults to None.
         """
-        from TTS.utils.audio import AudioProcessor
+        from TTS.TTS.utils.audio import AudioProcessor
 
         ap = AudioProcessor.init_from_config(config)
         tokenizer, new_config = TTSTokenizer.init_from_config(config)

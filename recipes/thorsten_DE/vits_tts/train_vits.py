@@ -2,13 +2,13 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.tts.configs.shared_configs import BaseDatasetConfig
-from TTS.tts.configs.vits_config import VitsConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models.vits import Vits, VitsAudioConfig
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio import AudioProcessor
-from TTS.utils.downloaders import download_thorsten_de
+from TTS.TTS.tts.configs.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.configs.vits_config import VitsConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models.vits import Vits, VitsAudioConfig
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio import AudioProcessor
+from TTS.TTS.utils.downloaders import download_thorsten_de
 
 output_path = os.path.dirname(os.path.abspath(__file__))
 dataset_config = BaseDatasetConfig(

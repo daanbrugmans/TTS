@@ -6,9 +6,9 @@ import shutil
 from trainer import get_last_checkpoint
 
 from tests import get_device_id, get_tests_output_path, run_cli
-from TTS.config.shared_configs import BaseAudioConfig
-from TTS.tts.configs.delightful_tts_config import DelightfulTTSConfig
-from TTS.tts.models.delightful_tts import DelightfulTtsArgs, DelightfulTtsAudioConfig, VocoderConfig
+from TTS.TTS.config.shared_configs import BaseAudioConfig
+from TTS.TTS.tts.configs.delightful_tts_config import DelightfulTTSConfig
+from TTS.TTS.tts.models.delightful_tts import DelightfulTtsArgs, DelightfulTtsAudioConfig, VocoderConfig
 
 config_path = os.path.join(get_tests_output_path(), "test_model_config.json")
 output_path = os.path.join(get_tests_output_path(), "train_outputs")

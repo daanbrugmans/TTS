@@ -8,8 +8,8 @@ import requests
 import torch
 import tqdm
 
-from TTS.tts.layers.bark.model import GPT, GPTConfig
-from TTS.tts.layers.bark.model_fine import FineGPT, FineGPTConfig
+from TTS.TTS.tts.layers.bark.model import GPT, GPTConfig
+from TTS.TTS.tts.layers.bark.model_fine import FineGPT, FineGPTConfig
 
 if (
     torch.cuda.is_available()

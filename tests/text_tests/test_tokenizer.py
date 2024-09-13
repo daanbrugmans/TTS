@@ -3,9 +3,9 @@ from dataclasses import dataclass, field
 
 from coqpit import Coqpit
 
-from TTS.tts.utils.text.characters import Graphemes, IPAPhonemes, _blank, _bos, _eos, _pad, _phonemes, _punctuations
-from TTS.tts.utils.text.phonemizers import ESpeak
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.tts.utils.text.characters import Graphemes, IPAPhonemes, _blank, _bos, _eos, _pad, _phonemes, _punctuations
+from TTS.TTS.tts.utils.text.phonemizers import ESpeak
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
 
 
 class TestTTSTokenizer(unittest.TestCase):

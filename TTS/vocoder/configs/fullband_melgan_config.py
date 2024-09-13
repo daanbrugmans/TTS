@@ -9,7 +9,7 @@ class FullbandMelganConfig(BaseGANVocoderConfig):
 
     Example:
 
-        >>> from TTS.vocoder.configs import FullbandMelganConfig
+        >>> from TTS.TTS.vocoder.configs import FullbandMelganConfig
         >>> config = FullbandMelganConfig()
 
     Args:
@@ -19,7 +19,7 @@ class FullbandMelganConfig(BaseGANVocoderConfig):
             'melgan_multiscale_discriminator`.
         discriminator_model_params (dict): The discriminator model parameters. Defaults to
             '{"base_channels": 16, "max_channels": 1024, "downsample_factors": [4, 4, 4, 4]}`
-        generator_model (str): One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+        generator_model (str): One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `melgan_generator`.
         batch_size (int):
             Batch size used at training. Larger values use more memory. Defaults to 16.

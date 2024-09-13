@@ -1,6 +1,6 @@
 import unittest
 
-from TTS.tts.utils.text.punctuation import _DEF_PUNCS, Punctuation
+from TTS.TTS.tts.utils.text.punctuation import _DEF_PUNCS, Punctuation
 
 
 class PunctuationTest(unittest.TestCase):

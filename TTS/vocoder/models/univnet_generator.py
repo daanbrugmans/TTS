@@ -5,7 +5,7 @@ import torch
 import torch.nn.functional as F
 from torch.nn.utils import parametrize
 
-from TTS.vocoder.layers.lvc_block import LVCBlock
+from TTS.TTS.vocoder.layers.lvc_block import LVCBlock
 
 LRELU_SLOPE = 0.1
 

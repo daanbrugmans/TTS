@@ -4,8 +4,8 @@ import unittest
 import torch
 
 from tests import get_tests_output_path, run_cli
-from TTS.config.shared_configs import BaseDatasetConfig
-from TTS.tts.configs.vits_config import VitsConfig
+from TTS.TTS.config.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.configs.vits_config import VitsConfig
 
 torch.manual_seed(1)
 

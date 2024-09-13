@@ -2,13 +2,13 @@ import os
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config.shared_configs import BaseDatasetConfig
-from TTS.tts.configs.delightful_tts_config import DelightfulTtsAudioConfig, DelightfulTTSConfig
-from TTS.tts.datasets import load_tts_samples
-from TTS.tts.models.delightful_tts import DelightfulTTS, DelightfulTtsArgs, VocoderConfig
-from TTS.tts.utils.speakers import SpeakerManager
-from TTS.tts.utils.text.tokenizer import TTSTokenizer
-from TTS.utils.audio.processor import AudioProcessor
+from TTS.TTS.config.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.configs.delightful_tts_config import DelightfulTtsAudioConfig, DelightfulTTSConfig
+from TTS.TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.models.delightful_tts import DelightfulTTS, DelightfulTtsArgs, VocoderConfig
+from TTS.TTS.tts.utils.speakers import SpeakerManager
+from TTS.TTS.tts.utils.text.tokenizer import TTSTokenizer
+from TTS.TTS.utils.audio.processor import AudioProcessor
 
 data_path = "/raid/datasets/vctk_v092_48khz_removed_silence_silero_vad"
 output_path = os.path.dirname(os.path.abspath(__file__))

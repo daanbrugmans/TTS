@@ -13,10 +13,10 @@ from encodec.utils import convert_audio
 from scipy.special import softmax
 from torch.nn import functional as F
 
-from TTS.tts.layers.bark.hubert.hubert_manager import HubertManager
-from TTS.tts.layers.bark.hubert.kmeans_hubert import CustomHubert
-from TTS.tts.layers.bark.hubert.tokenizer import HubertTokenizer
-from TTS.tts.layers.bark.load_model import clear_cuda_cache, inference_mode
+from TTS.TTS.tts.layers.bark.hubert.hubert_manager import HubertManager
+from TTS.TTS.tts.layers.bark.hubert.kmeans_hubert import CustomHubert
+from TTS.TTS.tts.layers.bark.hubert.tokenizer import HubertTokenizer
+from TTS.TTS.tts.layers.bark.load_model import clear_cuda_cache, inference_mode
 
 logger = logging.getLogger(__name__)
 

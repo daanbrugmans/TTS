@@ -83,8 +83,8 @@ phonemes if needed.
 Load one of the dataset supported by 🐸TTS.
 
 ```python
-from TTS.tts.configs.shared_configs import BaseDatasetConfig
-from TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.configs.shared_configs import BaseDatasetConfig
+from TTS.TTS.tts.datasets import load_tts_samples
 
 
 # dataset config for one of the pre-defined datasets
@@ -99,7 +99,7 @@ train_samples, eval_samples = load_tts_samples(dataset_config, eval_split=True)
 Load a custom dataset with a custom formatter.
 
 ```python
-from TTS.tts.datasets import load_tts_samples
+from TTS.TTS.tts.datasets import load_tts_samples
 
 
 # custom formatter implementation

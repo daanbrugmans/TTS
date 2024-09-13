@@ -5,7 +5,7 @@ import torch.nn as nn  # pylint: disable=consider-using-from-import
 import torch.nn.functional as F
 from torch.nn.utils import parametrize
 
-from TTS.tts.layers.delightful_tts.kernel_predictor import KernelPredictor
+from TTS.TTS.tts.layers.delightful_tts.kernel_predictor import KernelPredictor
 
 
 def calc_same_padding(kernel_size: int) -> Tuple[int, int]:

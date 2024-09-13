@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 
-from TTS.vocoder.configs.shared_configs import BaseVocoderConfig
-from TTS.vocoder.models.wavernn import WavernnArgs
+from TTS.TTS.vocoder.configs.shared_configs import BaseVocoderConfig
+from TTS.TTS.vocoder.models.wavernn import WavernnArgs
 
 
 @dataclass
@@ -9,7 +9,7 @@ class WavernnConfig(BaseVocoderConfig):
     """Defines parameters for Wavernn vocoder.
     Example:
 
-        >>> from TTS.vocoder.configs import WavernnConfig
+        >>> from TTS.TTS.vocoder.configs import WavernnConfig
         >>> config = WavernnConfig()
 
     Args:
@@ -22,7 +22,7 @@ class WavernnConfig(BaseVocoderConfig):
             enable / disable the use of Mulaw quantization for training. Only applicable if `mode == 'bits'`. Defaults
             to `True`.
         generator_model (str):
-            One of the generators from TTS.vocoder.models.*`. Every other non-GAN vocoder model is
+            One of the generators from TTS.TTS.vocoder.models.*`. Every other non-GAN vocoder model is
             considered as a generator too. Defaults to `WaveRNN`.
         wavernn_model_params (dict):
             kwargs for the WaveRNN model. Defaults to

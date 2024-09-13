@@ -3,8 +3,8 @@ from typing import Callable, Tuple
 import torch
 import torch.nn as nn  # pylint: disable=consider-using-from-import
 
-from TTS.tts.layers.delightful_tts.variance_predictor import VariancePredictor
-from TTS.tts.utils.helpers import average_over_durations
+from TTS.TTS.tts.layers.delightful_tts.variance_predictor import VariancePredictor
+from TTS.TTS.tts.utils.helpers import average_over_durations
 
 
 class EnergyAdaptor(nn.Module):  # pylint: disable=abstract-method

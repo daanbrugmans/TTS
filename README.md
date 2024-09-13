@@ -191,7 +191,7 @@ More details about the docker images (like GPU support) can be found [here](http
 
 ```python
 import torch
-from TTS.api import TTS
+from TTS.TTS.api import TTS
 
 # Get device
 device = "cuda" if torch.cuda.is_available() else "cpu"

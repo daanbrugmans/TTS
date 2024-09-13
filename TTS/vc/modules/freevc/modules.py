@@ -6,7 +6,7 @@ from torch.nn.utils.parametrizations import weight_norm
 from torch.nn.utils.parametrize import remove_parametrizations
 
 import TTS.vc.modules.freevc.commons as commons
-from TTS.vc.modules.freevc.commons import get_padding, init_weights
+from TTS.TTS.vc.modules.freevc.commons import get_padding, init_weights
 
 LRELU_SLOPE = 0.1
 
